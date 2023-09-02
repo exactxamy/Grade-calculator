@@ -1,0 +1,138 @@
+body{
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: lightseagreen;
+}
+
+div.students{
+    background-color: grey;
+}
+
+.sideMenue {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #c0c0c0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sideMenue .closed{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid black;
+}
+
+
+.sideMenue .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+   color: white;
+   text-decoration: none;
+}
+
+div #teacherSide{
+    background-color: #fff;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+div.main{
+    flex-grow: 1;
+    /* position: relative; */
+    width: calc(100% - 200px);
+    padding: 5px;
+    margin-left: 220px;
+}
+
+div #studentHeader{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #357bb7;
+    color: #357bb7;
+    margin-top: 4px;
+    padding: 2px 2px 4px 4px;
+}
+
+div #resultCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    flex: 0 0 calc(33.33%-15px);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#students{
+    margin-top: 50px;
+    width: calc(100% - 220px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 50px;
+    box-shadow: 0 8px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.student-img{
+    width: 320px;
+    height: 200px;
+}
+
+ #calculateButton{
+    background-color: #357bb7;
+    border: 1px solid #357bb7;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 12px 16px;
+ }
+
+ .student-card input{
+    background: #f2f2f2;
+    width: 85%;
+    margin: 4px 10px;
+    padding: 3px;
+ }
+
+ #resultDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1px;
+ }
+ 
+
